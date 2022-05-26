@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { itemSelected } from './itemSelected'
-import { postData, data } from './data';
+import { itemSelected } from '../js/itemSelected'
+import { postData, data } from '../js/data';
 
 export default class CreateItem extends Component {
 

@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import { data } from './data.js';
-import CreateItem from './CreateItem';
-import UpdateItem from './UpdateItem';
-import DeleteItem from './DeleteItem';
-import '../assets/display.css'
-import '../assets/fonts.css'
-import '../assets/style.css'
-import TodoList from './TodoList';
-import Inputs from './Inputs.jsx';
-import Header from './Header.jsx';
-import Spinner from './Spinner.jsx';
+import { data } from './js/data.js';
+import CreateItem from './jsx/CreateItem';
+import UpdateItem from './jsx/UpdateItem';
+import DeleteItem from './jsx/DeleteItem';
+import './css/display.css'
+import './css/fonts.css'
+import './css/style.css'
+import TodoList from './jsx/TodoList';
+import Inputs from './jsx/Inputs';
+import Header from './jsx/Header';
+import Spinner from './jsx/Spinner';
 
 
 class CrudApp extends Component {

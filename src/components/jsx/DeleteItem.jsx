@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { deleteData, data } from './data'
-import { itemSelected } from './itemSelected'
+import { deleteData, data } from '../js/data'
+import { itemSelected } from '../js/itemSelected'
 
 export default class DeleteItem extends Component {
 
