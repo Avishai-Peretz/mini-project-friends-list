@@ -6,16 +6,22 @@ export default class ListItem extends Component {
     return (
       <div
         className='todo-item column-c-c'
-        onClick={() => {
-          if (this.props.selectedItem !== this.props.id || this.props.selectedItem === null) {
-            this.props.setState({
+        onClick={async () => {
+          const notSameItem =await this.props.selectedItem !== this.props.id ? true : false;
+          const sameItem =await this.props.selectedItem === this.props.id ? true : false;
+          if (notSameItem ) {
+            await this.props.setState({
               selectedItem: this.props.id,
-              inputValue: { name: this.props.name, picture: this.props.picture },
+              inputValue: { name: await this.props.name, picture: await this.props.picture },
             })
             
-          }
-          if (this.props.selectedItem === this.props.id) {
-            this.props.setState({
+          }else if (sameItem) {
+            await this.props.setState({
+              selectedItem: null,
+              inputValue: { name: "", picture: "" },
+            })
+          } else {
+            await this.props.setState({
               selectedItem: null,
               inputValue: { name: "", picture: "" },
             })
