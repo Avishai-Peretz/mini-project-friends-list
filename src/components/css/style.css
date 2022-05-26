@@ -47,7 +47,7 @@ header span {
     width: 100vw;
     min-height: 70vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
     grid-template-rows: auto;
 }
 .btn {
@@ -70,14 +70,17 @@ header span {
 
 .todo-item{
     padding: 1rem 1rem;
-    margin: 10px;
-    width: 20rem;
-    background-color:#ccc;
+    margin: 1rem;
+    width: 16rem;
+    background-color: orchid;
     border-radius: 10px;
+    box-shadow: 0 4px 8px 0 darkorchid;
+  transition: 0.3s;
 }
 
 .todo-item:hover {
     background-color:pink;
+    box-shadow: 0 8px 16px 0 pink;
 }
 .todo-item[data-selected='true'] {
     background-color: pink;
