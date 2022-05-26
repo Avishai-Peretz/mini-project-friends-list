@@ -84,7 +84,7 @@ header span {
 }
 .todo-item[data-selected='true'] {
     background-color: pink;
-    border:red 1px solid;
+    box-shadow: 0 8px 16px 0 pink;
 }
 
 .todo-item img {
