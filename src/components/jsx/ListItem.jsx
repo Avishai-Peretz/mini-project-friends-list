@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 
 export default class ListItem extends Component {
+
   onClickHandler = async () => {
     const notSameItem =await this.props.selectedItem !== this.props.id ? true : false;
     const sameItem =await this.props.selectedItem === this.props.id ? true : false;
@@ -11,18 +12,14 @@ export default class ListItem extends Component {
         inputValue: { name: await this.props.name, picture: await this.props.picture },
       })
       
-    }else if (sameItem) {
-      await this.props.setState({
-        selectedItem: null,
-        inputValue: { name: "", picture: "" },
-      })
-    } else {
+    }else {
       await this.props.setState({
         selectedItem: null,
         inputValue: { name: "", picture: "" },
       })
     }
   }
+
   render() {
     return (
       <div
