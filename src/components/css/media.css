@@ -1,0 +1,11 @@
+@media only screen and (max-width: 1350px) {
+    .todo-list {
+      background-color: rgb(25, 126, 126);
+      font-size: 1.6rem;
+      width: 100vw;
+      min-height: 70vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr ;
+      grid-template-rows: auto;
+  }
+  }
