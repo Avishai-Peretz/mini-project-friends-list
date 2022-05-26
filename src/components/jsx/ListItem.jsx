@@ -5,7 +5,6 @@ export default class ListItem extends Component {
 
   onClickHandler = async () => {
     const notSameItem =await this.props.selectedItem !== this.props.id ? true : false;
-    const sameItem =await this.props.selectedItem === this.props.id ? true : false;
     if (notSameItem ) {
       await this.props.setState({
         selectedItem: this.props.id,
