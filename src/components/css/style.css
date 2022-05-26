@@ -8,6 +8,17 @@ body{
     font-size: 10px;
     position: relative;
 }
+.fix-container{
+  position: fixed;
+  top: 0;
+}
+ 
+.tip{
+  display: block;
+  text-align: center;
+  background-color: white;
+}
+
 header span {
   margin: 0;
   font-size: 5rem;
@@ -44,6 +55,7 @@ header span {
 .todo-list {
     background-color: rgb(25, 126, 126);
     font-size: 1.6rem;
+    margin-top: 25rem;
     width: 100vw;
     min-height: 70vh;
     display: grid;
@@ -91,6 +103,7 @@ header span {
     margin: 10px;
     width: 10rem;
     height: 10rem;
+    border-radius: 50%;
 }
 .box { 
     position: fixed;
@@ -146,15 +159,4 @@ header span {
   animation: load1 1s infinite ease-in-out;
   width: 1em;
   height: 4em;
-}
-@media (max-width: 768px) {
-  .todo-list {
-    background-color: rgb(25, 126, 126);
-    font-size: 1.6rem;
-    width: 100vw;
-    min-height: 70vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: auto;
-}
 }

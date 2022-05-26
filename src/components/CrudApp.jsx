@@ -36,6 +36,7 @@ class CrudApp extends Component {
         const { inputValue, todoItems, selectedItem, spinner } = this.state
         return (
             <div className="crud-container column-c-c">
+                <div className="fix-container">
                 <Spinner spinner={spinner} />
                 <Header title="My Friends List" />
                 <div className="todo-changes column-c-c">
@@ -60,7 +61,8 @@ class CrudApp extends Component {
                             />
                     </div>
                 </div>
-                <span className="txt-36 bold txt_red">{tip}</span>
+                <span className="txt-36 bold txt_red tip">{tip}</span>
+                </div>
                 <TodoList
                     todoItems={todoItems}
                     setState={this.setState}
