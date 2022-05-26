@@ -7,7 +7,7 @@ export default class ListItem extends Component {
       <div
         className='todo-item column-c-c'
         onClick={() => {
-          if (this.props.selectedItem !== this.props.id || this.props.selectedItem !== null) {
+          if (this.props.selectedItem !== this.props.id || this.props.selectedItem === null) {
             this.props.setState({
               selectedItem: this.props.id,
               inputValue: { name: this.props.name, picture: this.props.picture },

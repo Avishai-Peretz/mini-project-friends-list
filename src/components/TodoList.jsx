@@ -8,15 +8,15 @@ export default class TodoList extends Component {
     render() {
     return (
         <div className="todo-list">
-            {this.props.todoItems.map((name  , key) => {
+            {this.props.todoItems.map(({name, picture, id}  , key) => {
                 return (
                     <ListItem
                         key={key}
                         setState={this.props.setState}
                         selectedItem={this.props.selectedItem}
-                        name={name.name}
-                        picture={name.picture}
-                        id={name.id}
+                        name={name}
+                        picture={picture}
+                        id={id}
                     />                   
                 )
             })}
